@@ -1,0 +1,145 @@
+/* COLOR */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --pale-blue-2: hsl(225, 100%, 89%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+  letter-spacing: 0.5px;
+  background-color: var(--pale-blue);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media (max-width: 25em) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 45rem;
+  background-color: white;
+  overflow: hidden;
+  margin: 5rem auto;
+  padding-bottom: 2rem;
+}
+
+/* CONTENT */
+.content {
+  padding: 3rem;
+  text-align: center;
+  width: 37rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.text {
+  line-height: 1.6;
+  padding: 0 2rem;
+  color: var(--desaturated-blue);
+  margin-bottom: 2rem;
+}
+
+/* PLAN INFO */
+.plan-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.plan-info img {
+  width: 4.5rem;
+}
+
+.plan {
+  font-size: 1.5rem;
+  margin-left: -8rem;
+}
+
+.plan-name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  color: var(--desaturated-blue);
+}
+
+.plan-state {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+
+.plan-state:hover {
+  color: var(--desaturated-blue);
+}
+
+.btn-payment {
+  font-weight: 700;
+  border: none;
+  color: white;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  box-shadow: 0 15px 20px var(--pale-blue-2);
+  padding: 1.5rem 3rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.btn-payment:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.cancel-order {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+}
+
+.cancel-order:hover {
+  color: var(--dark-blue);
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
